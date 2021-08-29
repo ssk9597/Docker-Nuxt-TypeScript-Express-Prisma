@@ -167,6 +167,12 @@ declare module '*.vue' {
 
 ### ⑧`make composition-api`で Composition-API を導入する
 
+```
+make composition-api
+```
+
+#### nuxt.config.js
+
 ```javascript:frontend/nuxt.config.js
 require('dotenv').config();
 const { API_URL, API_URL_BROWSER } = process.env;
@@ -223,7 +229,7 @@ export default {
 };
 ```
 
-### ⑩`pages/index.vue`を修正してバックエンドとの通信を図る
+### ⑨`pages/index.vue`を修正してバックエンドとの通信を図る
 
 ```vue:frontend/pages/index.vue
 <template>
