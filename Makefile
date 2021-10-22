@@ -16,7 +16,7 @@ nuxt:
 	docker-compose up -d --build
 	docker-compose exec front npm install --save @nuxtjs/proxy @nuxtjs/dotenv
 	docker-compose exec front touch .env
-	docker-compose exec front npm install sass-loader@10.1.1 node-sass@5.0.0 --save-dev
+	docker-compose exec front npm install sass-loader@10.1.1 sass --save-dev
 
 # prismaのマイグレーションとGUIの実行
 migrate:
